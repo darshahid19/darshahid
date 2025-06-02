@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHAHID UL ISLAM DAR | HOSPITALITY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .navbar a {
+      color: #00adb5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #03c2cc;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #00adb5;
+      object-fit: cover;
+      margin-bottom: 20px;
+      animation: zoomIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #00adb5;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #cccccc;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #bbbbbb;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00adb5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 7px;
+      transition: background-color 0.8s ease;
+    }
+
+    .button:hover {
+      background-color: #019ca6;
+    }
+
+    /* Socials */
+    .social-icons {
+      margin-top: 25px;
+    }
+
+    .social-icons a {
+      color: #b50c00;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #03cc57;
+    }
+
+    /* Contact section */
+    #contact {
+      margin-top: 80px;
+      padding: 40px 20px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+    }
+
+    #contact h3 {
+      color: #d3e2d5;
+      margin-bottom: 10px;
+    }
+
+    #contact p {
+      color: #bbbbbb;
+      line-height: 1.6;
+    }
+
+    /* Animations */
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 3; }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 4em; }
+      .social-icons a { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <head>
+<ul class="nav-links">
+  <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+  <li><a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a></li>
+</ul>
+<!-- Home -->
+  <section id="home" class="container">
+    <img src="assets/img_20230425_165311_396.jpg" alt="Dar Shahid" class="profile-img" />
+    <h1>shahid ul islam dar</h1>
+    <h2>hospitality</h2>
+    <p>
+      The art of hospitality lies in making others feel valued.
+    </p>
+    <a href="assets/resume.pdf" target="_blank" class="button">View Resume</a>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/dar-shahid-a00830283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/_darshahid_14?igsh=MWlnNnk4ZWlwZW04eQ==&utm_source=ig_contact_invite" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/qr/Z4QZ5W2DAZVSN1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>who i am</h2>
+    <p>
+      My name is shahid, I am from jammu and kashmir i completed my IT and JT in hospitality industry,Also i have an experience of basic computer course.I am intrested in front office department because i am passionate about providing excellent customer service and enjoy the dynamic nature of the front office environment.i am motivated by the opportunity by meet new new people,solve problems, and contribute to creating a positive first impression for the organisation.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <div id="contact">
+      <h3>Contact Me</h3>
+      <p>Email: darshahid2021@gmail.com</p>
+      <p>Phone: +91-6006839805
+      </p>
+      <p>Location: Sopore Baramulla(193201) jammu and kashmir</p>
+    </div>
+  </section>
+</body>
+</html>

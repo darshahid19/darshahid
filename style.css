@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #0a4fce;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  color: #bbbbbb;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00ffd5;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+section h2 {
+  font-size: 36px;
+  color: #00ffd5;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+section p,
+section li {
+  font-size: 18px;
+  animation: slideUp 0.8s ease forwards;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid #00ffd5;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #00ffd5;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00e6c2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  .profile-photo {
+    width: 120px;
+  }
+}
